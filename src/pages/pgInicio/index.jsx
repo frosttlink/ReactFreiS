@@ -11,27 +11,29 @@ export default function Index() {
             <h1>React FreiS</h1>
           </div>
           <div className='navegacao-header'>
-            <Link className='inicio'>Inicio</Link>
-            <Link className='sobre'>Sobre</Link>
+            <Link to="/" className='inicio'>Inicio</Link>
+            <Link to="/sobre" className='sobre'>Sobre</Link>
           </div>
         </div>
       </header>
         <h2>Escolha um treino...</h2>
       <div className='container'>
-        <div className='subcontainer-amarelo'>
-          <img src="" alt="" />
-          <h3>Cupom de desconto</h3>
-          <p>Exercício 01</p>
-        </div>
-        <div className='subcontainer-verde'>
-          <img src="" alt="" />
-          <h3>Cupom de desconto</h3>
-          <p>Exercício 01</p>
-        </div>
-        <div className='subcontainer-azul'>
-          <img src="" alt="" />
-          <h3>Cupom de desconto</h3>
-          <p>Exercício 01</p>
+        <div className="subcontainers">
+          <div className='subcontainer-amarelo'>
+            <img src="/assets/images/amarelo.svg" alt="" />
+            <h3>Cupom de desconto</h3>
+            <p>Exercício 01</p>
+          </div>
+          <div className='subcontainer-verde'>
+            <img src="/assets/images/verde.svg" alt="" />
+            <h3>Cupom de desconto</h3>
+            <p>Exercício 01</p>
+          </div>
+          <div className='subcontainer-azul'>
+            <img src="/assets/images/azul.svg" alt="" />
+            <h3>Cupom de desconto</h3>
+            <p>Exercício 01</p>
+          </div>
         </div>
       </div>
     </div>

@@ -9,12 +9,18 @@
     padding: 0px 50px 0px 50px;
   }
 
+  .img-logo {
+    background-color: #6278F7;
+  }
+
   h1 {
     color: #fff;
     font-size: 20px;
   }
   
   .logo-header {
+    background-color: #6278F7;
+
     display: flex;
     align-items: center;
     gap: 30px;
@@ -22,24 +28,84 @@
 
   .navegacao-header {
     display: flex;
+    background-color: #6278F7;
     gap: 10px;
   }
 
   .inicio  {
     color: #fff;
+    background-color: #6278F7;
     text-decoration: none;
     font-weight: 400;
   }
 
   .sobre {
     color: #fff;
+    background-color: #6278F7;
     text-decoration: none;
     font-weight: 400;
+  }
+
+  h1 {
+    background-color: #6278F7;
   }
 
   h2 {
     margin-top: 55px;
     margin-left: 50px;
+  }
+
+  .subcontainers {
+    margin-left: 50px;
+    margin-top: 30px;
+    display: flex;
+    color: #383131;
+    font-size: 14px;
+    gap: 30px;
+  }
+
+  h3 {
+    background-color: #fff;
+    margin-top: 5px;
+  }
+
+  p {
+    background-color: #fff;
+    margin-top: 5px;
+    font-weight: 400;
+  }
+
+  .subcontainer-amarelo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 12px;
+    width: 215px;
+    height: 158px;
+    background-color: #fff;
+  }
+
+  .subcontainer-verde {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 12px;
+    width: 215px;
+    height: 158px;
+    background-color: #fff;
+  }
+
+  .subcontainer-azul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 12px;
+    width: 215px;
+    height: 158px;
+    background-color: #fff;
   }
 
 }
