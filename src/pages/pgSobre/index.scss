@@ -54,4 +54,24 @@
     margin-top: 55px;
     margin-left: 50px;
   }
+
+  .textos-sobre {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 30px 80px;
+      text-align: center;
+      font-weight: 400;
+      font-size: 32px;
+      color: #383131; 
+      line-height: 37.5px;
+  }
+
+  .sub-text {
+    padding: 0px 10px;
+  }
+
+    .logo-sobre {
+      margin-top: 20px;
+    }
 }

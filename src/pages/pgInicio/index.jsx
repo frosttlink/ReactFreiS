@@ -26,13 +26,13 @@ export default function Index() {
           </div>
           <div className='subcontainer-verde'>
             <img src="/assets/images/verde.svg" alt="" />
-            <h3>Cupom de desconto</h3>
-            <p>Exercício 01</p>
+            <h3>Converter Kg/gramas</h3>
+            <p>Exercício 02</p>
           </div>
           <div className='subcontainer-azul'>
             <img src="/assets/images/azul.svg" alt="" />
-            <h3>Cupom de desconto</h3>
-            <p>Exercício 01</p>
+            <h3>Valor total por quantidade</h3>
+            <p>Exercício 03</p>
           </div>
         </div>
       </div>
