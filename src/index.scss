@@ -91,7 +91,23 @@
   }
 
   .container-execs {
-    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 65px;
     background-color: #fff;
+    margin: 25px 350px;
+
+    
+    h3 {  
+      background-color: #fff;
+    }
+
+    input {
+      background-color: #fff;
+      border-style: none;
+      border: #A5A5A5 1px solid;
+      border-radius: 5px;
+    }
   }
