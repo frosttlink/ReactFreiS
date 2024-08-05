@@ -11,19 +11,26 @@ export default function Index() {
             <h1>React FreiS</h1>
           </div>
           <div className='navegacao-header'>
-            <Link to="/" className='inicio'>Inicio</Link>
-            <Link to="/sobre" className='sobre'>Sobre</Link>
+            <Link to="/" className='link'>Inicio</Link>
+            <Link to="/sobre" className='link'>Sobre</Link>
           </div>
         </div>
       </header>
         <h2>Escolha um treino...</h2>
+
+  
       <div className='container'>
         <div className="subcontainers">
-          <div className='subcontainer-amarelo'>
-            <img src="/assets/images/amarelo.svg" alt="" />
-            <h3>Cupom de desconto</h3>
-            <p>Exercício 01</p>
-          </div>
+
+          <Link to='/exec01' className='link'>
+            <div className='subcontainer-amarelo'>
+              <img src="/assets/images/amarelo.svg" alt="" />
+              <h3>Cupom de desconto</h3>
+              <p>Exercício 01</p>
+            </div>
+          </Link>
+
+
           <div className='subcontainer-verde'>
             <img src="/assets/images/verde.svg" alt="" />
             <h3>Converter Kg/gramas</h3>
