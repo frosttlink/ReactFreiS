@@ -30,9 +30,9 @@ export default function Exec01() {
           </p>
         </div>
         <div className="container-execs">
-          <h3>Informe o valor do pedido</h3>
+          <h4>Informe o valor do pedido</h4>
           <input type="text" placeholder="0"/>
-          <h3>Informe o valor do cupom</h3>
+          <h4>Informe o valor do cupom</h4>
           <input type="text" placeholder="0"/>
           <button>Executar</button>
         </div>
