@@ -86,6 +86,7 @@
     border-radius: 12px;
    
     p{ 
+      text-align: center;
       background-color: #fff;
     }
   }
@@ -93,13 +94,12 @@
   .container-execs {
     display: flex;
     flex-direction: column;
-    width: 476px;
-    height: 295px;
+    max-width: 476px;
+    max-height: 295px;
     padding: 50px 25px;
     gap: 8px;
     background-color: #fff;
     margin: 25px 350px;
-    position: relative;
     border-radius: 12px;
     
     h4 {  
@@ -114,10 +114,12 @@
       border-radius: 10px;
     }
 
+    .botao {
+      display: flex;
+      justify-content: end;
+    }
+
     button {
-      position: absolute;
-      bottom: 45px;
-      right: 25px;
       padding: 15px 10px;
       min-width: 180px;
       text-align: center;

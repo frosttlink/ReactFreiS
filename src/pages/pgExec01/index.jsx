@@ -34,7 +34,7 @@ export default function Exec01() {
           <input type="text" placeholder="0"/>
           <h4>Informe o valor do cupom</h4>
           <input type="text" placeholder="0"/>
-          <button>Executar</button>
+          <div className="botao"><button>Executar</button></div>
         </div>
         <div>
           Resultado: O total é R$ 0,00
