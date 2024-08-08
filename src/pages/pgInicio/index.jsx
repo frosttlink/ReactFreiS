@@ -18,7 +18,6 @@ export default function Index() {
       </header>
         <h2>Escolha um treino...</h2>
 
-  
       <div className='container'>
         <div className="subcontainers">
 
@@ -31,16 +30,24 @@ export default function Index() {
           </Link>
 
 
-          <div className='subcontainer-verde'>
-            <img src="/assets/images/verde.svg" alt="" />
-            <h3>Converter Kg/gramas</h3>
-            <p>Exercício 02</p>
-          </div>
-          <div className='subcontainer-azul'>
-            <img src="/assets/images/azul.svg" alt="" />
-            <h3>Valor total por quantidade</h3>
-            <p>Exercício 03</p>
-          </div>
+          <Link to='/exec02' className='link'>
+            <div className='subcontainer-verde'>
+              <img src="/assets/images/verde.svg" alt="" />
+              <h3>Converter Kg/gramas</h3>
+              <p>Exercício 02</p>
+            </div>
+          </Link>
+
+
+          <Link to='/exec03' className='link'>
+            <div className='subcontainer-azul'>
+              <img src="/assets/images/azul.svg" alt="" />
+              <h3>Valor total por quantidade</h3>
+              <p>Exercício 03</p>
+            </div>
+          </Link>
+
+
         </div>
       </div>
     </div>

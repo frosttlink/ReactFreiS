@@ -99,7 +99,7 @@
     padding: 50px 25px;
     gap: 8px;
     background-color: #fff;
-    margin: 25px 350px;
+    margin: 45px 0px;
     border-radius: 12px;
     
     h4 {  
@@ -117,6 +117,7 @@
     .botao {
       display: flex;
       justify-content: end;
+      background-color: #fff;
     }
 
     button {
@@ -129,4 +130,12 @@
       background-color: #6278F7;
     }
 
+
   }
+
+  .result {
+    text-align: center;
+  }
+
+
+

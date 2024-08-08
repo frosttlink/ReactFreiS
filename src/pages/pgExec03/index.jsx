@@ -3,9 +3,9 @@ import "./index.scss"
 
 import { Link } from "react-router-dom"
 
-export default function Exec01() {
+export default function Exec03() {
   return (
-    <div className="pagina-exec01">
+    <div className="pagina-exec03">
       <header>
         <div className='cabecalho'>
           <div className='logo-header'>
@@ -21,21 +21,31 @@ export default function Exec01() {
       <main>
         <div className="topo">
           <Link to='/'><ArrowLeft className="icon"/></Link>
-          <h1>Exercício 01 - Cupom de desconto</h1>
+          <h1>Exercício 03 - Valor total por quantidade</h1>
         </div>
           <div className="line"/>
         <div className="container-exec">
           <p>
-            Implementar um programa em <b>Javascript</b> para calcular o valor final de uma compra a partir do valor da compra e do cupom de desconto. <b>O cupom diz quantos reais</b> terá de desconto.
+            Implementar um programa em Javascript para calcular <b>o total de uma venda de açaí</b> a partir das quantidades compradas para cada tamanho: <b>pequeno, médio e grande,</b> sabendo que o valor do açaí é R$ 13,50; R$ 15,00 e R$ 17,50 respectivamente
           </p>
         </div>
         <center>
           <div className="container-execs">
-            <h4>Informe o valor do pedido</h4>
-            <input type="text" placeholder="0"/>
-            <h4>Informe o valor do cupom</h4>
-            <input type="text" placeholder="0"/>
-            <div className="botao"><button>Executar</button></div>
+            <div>
+              <h4>Quantidade pequeno</h4>
+              <input type="text" placeholder="0"/>
+            </div>
+            <div>
+              <h4>Quantidade médio</h4>
+              <input type="text" placeholder="0"/>
+            </div>
+            <div>
+              <h4>Quantidade grande</h4>
+              <input type="text" placeholder="0"/>
+            </div>
+            <div className="botao">
+              <button>Executar</button>
+            </div>
           </div>
         </center>
         <div className="result">

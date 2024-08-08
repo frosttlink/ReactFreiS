@@ -3,9 +3,9 @@ import "./index.scss"
 
 import { Link } from "react-router-dom"
 
-export default function Exec01() {
+export default function Exec02() {
   return (
-    <div className="pagina-exec01">
+    <div className="pagina-exec02">
       <header>
         <div className='cabecalho'>
           <div className='logo-header'>
@@ -21,19 +21,17 @@ export default function Exec01() {
       <main>
         <div className="topo">
           <Link to='/'><ArrowLeft className="icon"/></Link>
-          <h1>Exercício 01 - Cupom de desconto</h1>
+          <h1>Exercício 02 - Converter Kg/gramas</h1>
         </div>
           <div className="line"/>
         <div className="container-exec">
           <p>
-            Implementar um programa em <b>Javascript</b> para calcular o valor final de uma compra a partir do valor da compra e do cupom de desconto. <b>O cupom diz quantos reais</b> terá de desconto.
+            Implementar um programa em Javascript para <b>converter kilos em gramas.</b>
           </p>
         </div>
         <center>
           <div className="container-execs">
-            <h4>Informe o valor do pedido</h4>
-            <input type="text" placeholder="0"/>
-            <h4>Informe o valor do cupom</h4>
+            <h4>Valor em gramas</h4>
             <input type="text" placeholder="0"/>
             <div className="botao"><button>Executar</button></div>
           </div>
