@@ -1,10 +1,44 @@
 .pagina-exec03 {
+
+
   .line {
     background-color: #37FFF3;
   }
-
+  
   .container-execs {
-    flex-direction: row;
+    display: flex;
+    min-width: 647px; 
+    min-height: 194px;
+    justify-content: center;
+    position: relative;
+    padding: 10px 10px;
+   
   }
+  
+  input {
+    max-width: 120px;
+  }
+  
+  .frases {
+  
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+
+.inserts {
+
+  background-color: #fff;   
+  display: flex;
+  justify-content: space-around
+
+}
+
+  .botao {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+
 
 }

@@ -1,9 +1,21 @@
 import { ArrowLeft } from "lucide-react"
+import { useState } from "react";
 import "./index.scss"
 
 import { Link } from "react-router-dom"
 
 export default function Exec02() {
+
+const [valorKg, setValorKg] = useState(0)
+const [valorG, setValorG] = useState(0)
+
+
+function calcG() {
+  let calc = valorKg * 1000
+  setValorG(calc)
+}
+
+
   return (
     <div className="pagina-exec02">
       <header>
@@ -31,13 +43,13 @@ export default function Exec02() {
         </div>
         <center>
           <div className="container-execs">
-            <h4>Valor em gramas</h4>
-            <input type="text" placeholder="0"/>
-            <div className="botao"><button>Executar</button></div>
+            <h4>Valor em kilos</h4>
+            <input onChange={e => setValorKg(e.target.value)} type="text" placeholder="0"/>
+            <div className="botao"><button onClick={calcG}>Executar</button></div>
           </div>
         </center>
         <div className="result">
-          Resultado: O total é R$ 0,00
+          Resultado: O total é {valorG}
         </div>
       </main>
     </div>
