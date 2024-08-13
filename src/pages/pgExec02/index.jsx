@@ -6,14 +6,14 @@ import { Link } from "react-router-dom"
 
 export default function Exec02() {
 
-const [valorKg, setValorKg] = useState(0)
-const [valorG, setValorG] = useState(0)
+  const [valorKg, setValorKg] = useState(0)
+  const [valorG, setValorG] = useState(0)
 
 
-function calcG() {
-  let calc = valorKg * 1000
-  setValorG(calc)
-}
+  function calcG() {
+    let calc = valorKg * 1000
+    setValorG(calc)
+  }
 
 
   return (

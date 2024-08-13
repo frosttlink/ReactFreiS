@@ -6,7 +6,6 @@ import { Link } from "react-router-dom"
 
 export default function Exec01() {
 
-
   const [valorPedido, setValorPedido] = useState(0)
   const [cupom, setCupom] = useState(0)
   const [total, setTotal] = useState(0)
@@ -16,8 +15,6 @@ export default function Exec01() {
     setTotal (calculo)
   }
   
-
-
   return (
     <div className="pagina-exec01">
       <header>
@@ -34,7 +31,9 @@ export default function Exec01() {
       </header>
       <main>
         <div className="topo">
-          <Link to='/'><ArrowLeft className="icon"/></Link>
+          <Link to='/'>
+            <ArrowLeft className="icon"/> 
+          </Link>
           <h1>Exercício 01 - Cupom de desconto</h1>
         </div>
           <div className="line"/>

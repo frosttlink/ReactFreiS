@@ -7,9 +7,10 @@
   }
 
   .subcontainers {
+    display: flex;
+    flex-wrap: wrap;
     margin-left: 50px;
     margin-top: 30px;
-    display: flex;
     font-size: 14px;
     gap: 30px;
 
@@ -31,8 +32,9 @@
     font-weight: 400;
   }
 
-  .subcontainer-amarelo {
+  .subcontainer-cores {
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -42,27 +44,6 @@
     background-color: #fff;
   }
 
-  .subcontainer-verde {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 12px;
-    width: 215px;
-    height: 158px;
-    background-color: #fff;
-  }
-
-  .subcontainer-azul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 12px;
-    width: 215px;
-    height: 158px;
-    background-color: #fff;
-  }
 
   .subcontainers img {
     background-color: #fff;

@@ -2,8 +2,22 @@ import { ArrowLeft } from "lucide-react"
 import "./index.scss"
 
 import { Link } from "react-router-dom"
+import { useState } from "react"
+
 
 export default function Exec03() {
+
+  const [acaiP, setAcaiP] = useState(0)
+  const [acaiM, setAcaiM] = useState(0)
+  const [acaiG, setAcaiG] = useState(0)
+  const [totAcai, setTotAcai] = useState(0)
+
+
+  function calcAcai() {
+    let total = (acaiP * 13.50)  + (acaiM * 15.00)  + (acaiG * 17.50)  
+    setTotAcai(total)
+  }
+
   return (
     <div className="pagina-exec03">
       <header>
@@ -39,17 +53,19 @@ export default function Exec03() {
             </div>
 
             <div className="inserts">
-              <input type="text" placeholder="0" />
-              <input type="text" placeholder="0" />
-              <input type="text" placeholder="0" />
+              <input onChange={e => setAcaiP(e.target.value)} type="text" placeholder="0" />
+              <input onChange={e => setAcaiM(e.target.value)} type="text" placeholder="0" />
+              <input onChange={e => setAcaiG(e.target.value)} type="text" placeholder="0" />
             </div>
 
-            <div className="botao"><button>Executar</button></div>
+            <div className="botao">
+              <button onClick={calcAcai}>Executar</button>
+            </div>
 
           </div>
         </center>
         <div className="result">
-          Resultado: O total é R$ 0,00
+          Resultado: O total é {totAcai}
         </div>
       </main>
     </div>
