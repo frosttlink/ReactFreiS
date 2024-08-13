@@ -1,17 +1,17 @@
 .pagina-exec10 {
   .line {
-    background-color: #B75333;
+    background-color: #b75333;
   }
-  
+
   .container-execs {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 20px;
-    min-width: 476px; 
+    min-width: 476px;
     min-height: 187px;
     padding: 10px 30px;
-   
+
     h4 {
       margin-bottom: 5px;
     }
@@ -21,9 +21,8 @@
       height: 50px;
       display: flex;
       margin-top: 2px;
-      justify-content: flex-end; 
+      justify-content: flex-end;
     }
-    
 
     input {
       min-width: 198px;
@@ -34,12 +33,39 @@
       margin-top: 15px;
       background-color: #fff;
     }
-
   }
 
   .icon_trash {
-    background-color: #6278F7;
-    color: #000;
+    background-color: #6278f7;
+    color: #fff;
+    width: 54px;
+    height: 50px;
+    border-radius: 10px;
   }
 
+  .lista_imc {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    min-width: 703px;
+    min-height: 54px;
+  }
+  
+  ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    width: 60%;
+  }
+  
+  li {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+  }
 }

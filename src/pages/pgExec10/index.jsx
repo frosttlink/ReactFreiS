@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import { ArrowLeft } from "lucide-react"
 import "./index.scss"
 
@@ -74,12 +75,12 @@ export default function Exec10() {
 
 
           </div>
-            <div>
+            <div className="lista_imc">
               <ul>
                 {listaImc.map((item, pos) =>  (
                   <li key={pos}>
-                    <Trash2 className="icon_trash" onClick={() => removerImc(pos)} />
                     {item}
+                    <Trash2 className="icon_trash" onClick={() => removerImc(pos)} />
                   </li>
                 ))}
               </ul>
