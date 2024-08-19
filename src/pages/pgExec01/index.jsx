@@ -16,6 +16,12 @@ export default function Exec01() {
     let calculo = valorPedido - cupom
     setTotal (calculo)
   }
+
+  function teclaApertada(e) {
+    if (e.key == 'Enter') {
+        calcularTotal()
+    }
+}
   
   return (
     <div className="pagina-exec01">
@@ -36,10 +42,10 @@ export default function Exec01() {
         <center>
           <div className="container-execs">
             <h4>Informe o valor do pedido</h4>
-            <input  onChange={e => setValorPedido(e.target.value)} type="text" placeholder="0"/>
+            <input onKeyUp={teclaApertada}   onChange={e => setValorPedido(e.target.value)} type="text" placeholder="0"/>
             <h4>Informe o valor do cupom</h4>
-            <input onChange={e => setCupom(e.target.value)}  type="text" placeholder="0"/>
-            <div  onClick={calcularTotal} className="botao"><button>Executar</button></div>
+            <input onKeyUp={teclaApertada}  onChange={e => setCupom(e.target.value)}  type="text" placeholder="0"/>
+            <div onClick={calcularTotal} className="botao"><button >Executar</button></div>
           </div>
         </center>
         <div className="result">
