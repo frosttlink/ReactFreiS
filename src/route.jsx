@@ -11,6 +11,7 @@ import Exec07 from "./pages/pgExec07";
 import Exec08 from "./pages/pgExec08";
 import Exec09 from "./pages/pgExec09";
 import Exec10 from "./pages/pgExec10";
+import Exec11 from "./pages/pgExec11";
 
 export default function Navegacao() {
   return (
@@ -28,6 +29,7 @@ export default function Navegacao() {
         <Route path="/exec08" element={ <Exec08/> }/>
         <Route path="/exec09" element={ <Exec09/> }/>
         <Route path="/exec10" element={ <Exec10/> }/>
+        <Route path="/exec11" element={ <Exec11/> }/>
 
         
       </Routes>

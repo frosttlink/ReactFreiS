@@ -1,0 +1,41 @@
+.comp-TituloEnunciado {
+   
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        margin: 2% 8%;
+
+        .subcontainer-titulo {
+            i{
+                font-size: 30px;
+            }
+
+            font: 700 18px 'Roboto';
+            display: flex;
+            align-items: center;
+            align-self: flex-start;
+            gap: 15px;
+        }
+        
+        hr{
+           
+            border-radius: 12px;
+            height: 5px;
+            
+        }
+        .subcontainer-enunciado{
+            font: 500 18px/16px 'Roboto';
+            text-align: center;
+          
+
+            
+            padding: 75px;
+
+            background-color: #fff;
+         
+
+            border-radius: 12px;
+        }
+
+    
+}
