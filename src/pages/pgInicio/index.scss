@@ -1,52 +1,21 @@
 .pagina-inicial {
 
   
+  
   h2 {
     margin-top: 55px;
     margin-left: 50px;
   }
-
-  .subcontainers {
+  
+  .cards {
     display: flex;
     flex-wrap: wrap;
     margin-left: 50px;
     margin-top: 30px;
     font-size: 14px;
     gap: 30px;
-
-    .link {
-      color: #383131;
-      text-decoration: none;
-    }
-   
+  
   }
 
-  h3 {
-    background-color: #fff;
-    margin-top: 5px;
-  }
-
-  p {
-    background-color: #fff;
-    margin-top: 5px;
-    font-weight: 400;
-  }
-
-  .subcontainer-cores {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 12px;
-    width: 215px;
-    height: 158px;
-    background-color: #fff;
-  }
-
-
-  .subcontainers img {
-    background-color: #fff;
-  }
 
 }

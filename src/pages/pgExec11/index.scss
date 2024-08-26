@@ -2,4 +2,10 @@
   .line {
     background-color: #6533B7;
   }
+  .result {
+    & p{
+      background-color: #F5F6FA;
+    }
+
+  }
 }

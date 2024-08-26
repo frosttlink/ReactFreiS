@@ -1,8 +1,89 @@
 import Cabecalho from '../../components/cabecalho';
+import Card from '../../components/card';
 import './index.scss';
 import { Link } from "react-router-dom"
 
 export default function Index() {
+  let cardForm = [
+    
+    {
+      link: '/exec01',
+      cor: '/assets/images/amarelo.svg',
+      titulo: 'Cupom de desconto',
+      subtitulo: 'Exercicio 01'
+    },
+    {
+      link: '/exec02',
+      cor: '/assets/images/verde.svg',
+      titulo: 'Converter Kg/gramas',
+      subtitulo: 'Exercicio 02'
+    },
+    {
+      link: '/exec03',
+      cor: '/assets/images/azul.svg',
+      titulo: 'Valor total por quantidade',
+      subtitulo: 'Exercicio 03'
+    },
+    {
+      link: '/exec04',
+      cor: '/assets/images/azulEscuro.svg',
+      titulo: 'Leitura de livro',
+      subtitulo: 'Exercicio 04'
+    },
+    {
+      link: '/exec05',
+      cor: '/assets/images/roxo.svg',
+      titulo: 'Média de notas',
+      subtitulo: 'Exercicio 05'
+    },
+    {
+      link: '/exec06',
+      cor: '/assets/images/bronzeado.svg',
+      titulo: 'Salário líquido',
+      subtitulo: 'Exercicio 06'
+    },
+    {
+      link: '/exec07',
+      cor: '/assets/images/cyan.svg',
+      titulo: 'Cores primárias',
+      subtitulo: 'Exercicio 07'
+    },
+    {
+      link: '/exec08',
+      cor: '/assets/images/black.svg',
+      titulo: 'Temperatura',
+      subtitulo: 'Exercicio 08'
+    },
+    {
+      link: '/exec09',
+      cor: '/assets/images/gray.svg',
+      titulo: 'Sorveteria',
+      subtitulo: 'Exercicio 09'
+    },
+    {
+      link: '/exec10',
+      cor: '/assets/images/brown.svg',
+      titulo: 'Calculo de IMC com histórico',
+      subtitulo: 'Exercicio 10'
+    },
+    {
+      link: '/exec11',
+      cor: '/assets/images/purple.svg',
+      titulo: 'Tabuada',
+      subtitulo: 'Exercicio 11'
+    },
+    {
+      link: '/exec12',
+      cor: '/assets/images/yellow.svg',
+      titulo: 'Comparador de pessoas',
+      subtitulo: 'Exercicio 12'
+    }
+]
+
+
+
+
+
   return (
     <div className="pagina-inicial">
       <Cabecalho/>
@@ -10,104 +91,18 @@ export default function Index() {
 
       <div className='container'>
         <div className="subcontainers">
-
-          <Link to='/exec01' className='link'>
-            <div className='subcontainer-cores'>
-              <img src="/assets/images/amarelo.svg" alt="" />
-              <h3>Cupom de desconto</h3>
-              <p>Exercício 01</p>
-            </div>
-          </Link>
-
-
-          <Link to='/exec02' className='link'>
-            <div className='subcontainer-cores'>
-              <img src="/assets/images/verde.svg" alt="" />
-              <h3>Converter Kg/gramas</h3>
-              <p>Exercício 02</p>
-            </div>
-          </Link>
-
-
-          <Link to='/exec03' className='link'>
-            <div className='subcontainer-cores'>
-              <img src="/assets/images/azul.svg" alt="" />
-              <h3>Valor total por quantidade</h3>
-              <p>Exercício 03</p>
-            </div>
-          </Link>
-
-          <Link to='/exec04' className='link'>
-            <div className='subcontainer-cores'>
-              <img src="/assets/images/azulEscuro.svg" alt="" />
-              <h3>Leitura de livro</h3>
-              <p>Exercício 04</p>
-            </div>
-          </Link>
-
-          <Link to='/exec05' className='link'>
-            <div className='subcontainer-cores'>
-              <img src="/assets/images/roxo.svg" alt="" />
-              <h3>Média de notas</h3>
-              <p>Exercício 05</p>
-            </div>
-          </Link>
-
-          <Link to='/exec06' className='link'>
-            <div className='subcontainer-cores'>
-              <img src="/assets/images/salmon.svg" alt="" />
-              <h3>Média de notas</h3>
-              <p>Exercício 06</p>
-            </div>
-          </Link>
-
-          <Link to='/exec07' className='link'>
-            <div className='subcontainer-cores'>
-              <img src="/assets/images/cyan.svg" alt="" />
-              <h3>Cores primárias</h3>
-              <p>Exercício 07</p>
-            </div>
-          </Link>
-
-          <Link to='/exec08' className='link'>
-            <div className='subcontainer-cores'>
-              <img src="/assets/images/black.svg" alt="" />
-              <h3>Temperatura</h3>
-              <p>Exercício 08</p>
-            </div>
-          </Link>
-
-          <Link to='/exec09' className='link'>
-            <div className='subcontainer-cores'>
-              <img src="/assets/images/gray.svg" alt="" />
-              <h3>Sorveteria</h3>
-              <p>Exercício 09</p>
-            </div>
-          </Link>
-
-          <Link to='/exec10' className='link'>
-            <div className='subcontainer-cores'>
-              <img src="/assets/images/brown.svg" alt="" />
-              <h3>Calculo de IMC com histórico</h3>
-              <p>Exercício 10</p>
-            </div>
-          </Link>
-
-          <Link to='/exec11' className='link'>
-            <div className='subcontainer-cores'>
-              <img src="/assets/images/purple.svg" alt="" />
-              <h3>Tabuada</h3>
-              <p>Exercício 11</p>
-            </div>
-          </Link>
-
-          <Link to='/exec12' className='link'>
-            <div className='subcontainer-cores'>
-              <img src="/assets/images/yellow.svg" alt="" />
-              <h3>Comparador de pessoas</h3>
-              <p>Exercício 12</p>
-            </div>
-          </Link>
+          <div className='cards'>
+            {
+              cardForm.map(c =>
+                <Card
+                  link ={c.link}
+                  cor = {c.cor}
+                  titulo ={c.titulo}
+                  subtitulo ={c.subtitulo}
+              />
+              )
+            }
+          </div>
 
 
         </div>
@@ -115,3 +110,4 @@ export default function Index() {
     </div>
   );
 }
+
