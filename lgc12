@@ -1,0 +1,42 @@
+import prompt from "prompt-sync";
+const ler = prompt();
+
+let pessoss =[{
+  nome : 'jorge',
+  idade: 23,
+  sexo: 'masculino'
+},
+{
+  nome : 'jariana',
+  idade: 22,
+  sexo: 'feminino'
+},{
+
+  nome : 'jorgao',
+  idade: 25,
+  sexo: 'masculino'
+},
+{
+  nome : 'jorgina',
+  idade: 155,
+  sexo: 'feminino'
+}
+]
+
+let pessoaMaisJovem = 0;
+let mulhermisjovem = pessoss[0].idade;
+
+
+
+for(let i = 0; i < pessoss.length; i++){
+  if ( mulhermisjovem > pessoss[i].idade){
+        mulhermisjovem = pessoss[i].nome
+        if(pessoss[i].sexo == 'feminino'){
+          pessoaMaisJovem = mulhermisjovem
+        }
+      }
+    }
+  
+
+
+console.log(pessoaMaisJovem);
